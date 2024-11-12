@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="one__container form__container">
+        <h1 class="vacancy">Vakansiya ma'lumotlarini kiriting</h1>
+        <div class="logo">
+            <h4 class="logo__url">Logotip URL</h4>
+            <input class="url__infor" type="url" placeholder="Logotip URL manzilini kiriting">
+        </div>
+
+        <div class="company">
+            <h6 class="company__name">Kompaniya nomi</h6>
+            <input class="url__manage" type="text" placeholder="manage">
+        </div>
+        <div class="checked">
+            <label class="label__one">
+                <input type="checkbox" name="option1">
+                <h3>Yangi</h3>
+            </label>
+
+            <label class="label__two">
+                <input type="checkbox" name="option2">
+                <h3>featured</h3>
+            </label>
+        </div>
+
+        <div class="position__container">
+            <h6 class="position__url">Lavozim</h6>
+            <input class="url__manage" type="text" placeholder="Fullstack Developer">
+        </div>
+        <div class="drop">
+            <div class="dropdown-group">
+                <label for="vaqt">Vaqt</label><br>
+                <select id="vaqt">
+                    <option value="" disabled selected>Tanlang</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                </select>
+            </div>
+
+            <!-- Second Dropdown: Ish turi -->
+            <div class="dropdown-group">
+                <label for="ish-turi">Ish turi</label><br>
+                <select id="ish-turi">
+                    <option value="" disabled selected>Tanlang</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="Midweight">Midweight</option>
+                    <option value="Python">Python</option>
+                    <option value="React">React</option>
+                </select>
+            </div>
+
+            <!-- Third Dropdown: Joylashuv -->
+            <div class="dropdown-group">
+                <label for="joylashuv">Joylashuv</label><br>
+                <select id="location" class="select" name="location">
+                    <option value="">Tanlang</option>
+                    <option value="Toshkent">Toshkent</option>
+                    <option value="Buxoro">Buxoro</option>
+                    <option value="Samarqand">Samarqand</option>
+                </select>
+            </div>
+        </div>
+        <div class="skills-group">
+            <label><input type="checkbox" name="skills" value="Fullstack"> Fullstack</label>
+            <br>
+            <label><input type="checkbox" name="skills" value="Python"> Python</label>
+
+            
+
+
+        </div>
+        <div class="skills__group--one">
+            <label><input type="checkbox" name="skills" value="Midweight"> Midweight</label>
+            <br>
+            <label><input type="checkbox" name="skills" value="React"> React</label>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
