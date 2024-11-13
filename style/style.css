@@ -190,68 +190,96 @@ input[type="checkbox"] {
     border: none;
 
 }
-.two__container{
+
+.images__card{
+    margin-bottom: 55px;
+}
+
+.container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
 
-.job-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 1110px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card__img img {
+    border-radius: 10%;
+}
+
+.card__form {
+    display: flex;
+    margin-bottom: 24px;
+    box-shadow: 7px 14px 31px 4px rgba(34, 60, 80, 0.2);
+    padding: 50px;
+    width: 1110px;
+    height: 152px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.card__info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.card__header {
     display: flex;
     align-items: center;
-    gap: 20px;
-}
-
-.job-card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.job-info {
-    flex: 1;
-}
-
-.job-info h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-.job-info p {
-    color: #888;
-    margin-bottom: 15px;
-}
-
-.tags {
-    display: flex;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
-.tag {
-    background-color: #eef6ff;
-    color: #0056b3;
+.company {
+    font-weight: bold;
+    color: #2b4c7e;
+}
+
+.new__span {
+    background-color: #5ba4a4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.featured__span {
+    background-color: #2b4c7e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.card__title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.card__details {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #7b8e9e;
+    margin-top: 5px;
+}
+
+.card__skills {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.c--span {
+    width: 81px;
+    height: 32px;
+    background-color: #eef6f6;
+    color: #5ba4a4;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
 }
-
-.new-featured {
-    display: inline-block;
-    background-color: #008000;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 0.8em;
-    margin-right: 5px;
-}
-
-.featured {
-    background-color: #333;
+body{
+    background: #EFFAFA;
 }
