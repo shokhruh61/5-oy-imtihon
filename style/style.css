@@ -298,3 +298,15 @@ input[type="checkbox"] {
 body {
     background: #EFFAFA;
 }
+
+.delete-btn {
+    background-color: yellowgreen;
+    color: white;
+    margin-top: 92px;
+    padding: 3px;
+    border: none;
+    font-size: 20px;
+    font-weight:700;
+    line-height: 20px;
+
+}

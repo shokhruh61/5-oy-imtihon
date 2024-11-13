@@ -23,7 +23,7 @@ function createCard(logoUrl, companyName, isNew, isFeatured, position, timeType,
                 ${skills.map(skill => `<span class="c--span">${skill}</span>`).join('')}
             </div>
             <!-- Delete tugmasi -->
-            <button class="delete-btn">O'chirish</button>
+            <button class="delete-btn">DEL</button>
         </div>
     `;
     cardsContainer.insertAdjacentHTML('beforeend', cardHTML);
@@ -57,7 +57,6 @@ function deleteCard(deleteBtn) {
         const cardElement = deleteBtn.closest('.card__form');
         cardElement.remove();
 
-        // localStorage'dan card'ni o'chirish
         const companyName = cardElement.querySelector('.company').textContent;
         let savedCards = JSON.parse(localStorage.getItem('cards')) || [];
         savedCards = savedCards.filter(card => card.companyName !== companyName);
