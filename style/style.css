@@ -140,7 +140,8 @@ input[type="checkbox"] {
     background-position: right 5px center;
     background-size: 15px;
 }
-.drop{
+
+.drop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,17 +149,109 @@ input[type="checkbox"] {
     margin-bottom: 50px;
 }
 
-.dropdown-group label{
+.dropdown-group label {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     text-align: left;
 }
 
-.skills__group--one{
+.skills__group--one {
     margin-left: 300px;
-    margin-bottom: 77px;
+    margin-bottom: 50px;
 }
-.skills-group{
+
+.skills-group {
     margin-left: 60px;
-    margin-bottom: -55px;
+    margin-bottom: -35px;
+}
+
+.form__btn {
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form__btn:active {
+    background-color: orangered;
+    transform: scale(1.05);
+    color: black;
+    border: none;
+
+}
+.two__container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.job-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1110px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.job-info p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #eef6ff;
+    color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.new-featured {
+    display: inline-block;
+    background-color: #008000;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.featured {
+    background-color: #333;
 }
