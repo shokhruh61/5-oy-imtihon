@@ -191,7 +191,7 @@ input[type="checkbox"] {
 
 }
 
-.images__card{
+.images__card {
     margin-bottom: 55px;
 }
 
@@ -202,7 +202,9 @@ input[type="checkbox"] {
 }
 
 .card__img img {
-    border-radius: 10%;
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
 }
 
 .card__form {
@@ -228,7 +230,10 @@ input[type="checkbox"] {
 }
 
 .company {
-    font-weight: bold;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.56px;
     color: #2b4c7e;
 }
 
@@ -237,28 +242,36 @@ input[type="checkbox"] {
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.56px;
 }
 
 .featured__span {
-    background-color: #2b4c7e;
+    background-color: #2B3939;
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
     margin-left: 5px;
 }
 
 .card__title {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
     color: #3a3a3a;
 }
 
 .card__details {
     display: flex;
     gap: 15px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
     color: #7b8e9e;
     margin-top: 5px;
 }
@@ -271,15 +284,17 @@ input[type="checkbox"] {
 }
 
 .c--span {
-    width: 81px;
-    height: 32px;
     background-color: #eef6f6;
     color: #5ba4a4;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 12px;
+    font-family: 'League Spartan';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
     text-align: center;
 }
-body{
+
+body {
     background: #EFFAFA;
 }
