@@ -1,7 +1,6 @@
 const saveButton = document.querySelector('.form__btn');
 const cardsContainer = document.querySelector('.cards');
 
-// Yangi card yaratish funksiyasi
 function createCard(logoUrl, companyName, isNew, isFeatured, position, timeType, jobType, location, skills) {
     const cardHTML = `
         <div class="card__form container">
@@ -28,12 +27,10 @@ function createCard(logoUrl, companyName, isNew, isFeatured, position, timeType,
     `;
     cardsContainer.insertAdjacentHTML('beforeend', cardHTML);
 
-    // Yangi card yaratilganda "O'chirish" tugmasiga event listener qo'shish
     const deleteBtn = cardsContainer.lastElementChild.querySelector('.delete-btn');
     deleteBtn.addEventListener('click', () => deleteCard(deleteBtn));
 }
 
-// localStorage'dan card'larni yuklash
 function loadCardsFromLocalStorage() {
     const savedCards = JSON.parse(localStorage.getItem('cards')) || [];
     savedCards.forEach(card => {
@@ -51,7 +48,6 @@ function loadCardsFromLocalStorage() {
     });
 }
 
-// Card o'chirish funksiyasi
 function deleteCard(deleteBtn) {
     if (confirm("Rostan ham o'chirmoqchimisiz?")) {
         const cardElement = deleteBtn.closest('.card__form');
@@ -64,7 +60,6 @@ function deleteCard(deleteBtn) {
     }
 }
 
-// Formadagi ma'lumotlarni saqlash funksiyasi
 saveButton.addEventListener('click', function () {
     const logoUrl = document.querySelector('.url__infor').value;
     const companyName = document.querySelector('.company input').value;
@@ -75,13 +70,12 @@ saveButton.addEventListener('click', function () {
     const jobType = document.getElementById('ish-turi').value;
     const location = document.getElementById('location').value;
 
-    // "Skills" checkboxlaridan tanlanganlarini olish
     const skills = [];
     document.querySelectorAll('.skills-group input:checked').forEach(input => skills.push(input.value));
     document.querySelectorAll('.skills__group--one input:checked').forEach(input => skills.push(input.value));
 
     if (!logoUrl || !companyName || !position || !timeType || !jobType || !location) {
-        alert("Iltimos, barcha maydonlarni to'ldiring!");
+        confirm("Iltimos, barcha maydonlarni to'ldiring!");
         return;
     }
 
@@ -93,6 +87,4 @@ saveButton.addEventListener('click', function () {
 
     document.querySelector('.one__container form__container').reset();
 });
-
-// Sahifa yuklanganda localStorage'dan card'larni yuklash
 window.addEventListener('load', loadCardsFromLocalStorage);
